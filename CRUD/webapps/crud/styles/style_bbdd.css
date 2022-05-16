@@ -1,0 +1,19 @@
+/********* style *********/
+
+@font-face {
+  font-family: note;
+  src: url();
+}
+
+/* general layout */
+
+.bg-secondary {background-image: url("../images/Dinosaurs-in-the-round-cover-b.jpg");
+        background-size: cover;
+             margin:auto;}
+
+.bg-lime {color:chartreuse;}
+
+.text-purple {color:purple;}
+
+.text-navy {color: navy;}
+

@@ -1,0 +1,565 @@
+<!--%@page contentType="text/html" pageEncoding="UTF-8"%-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEPREDADORES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style_bbdd.css">
+    <link rel="shortcut icon" href="./images/617-6170907_dinosaur-skull-x-ray-t-rex-skull-vector.png" type="image/x-icon">
+</head>
+<body class="bg-secondary"><!---->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary text-danger position-sticky top-0 opacity-75 zindex-sticky">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="logo" class="logo" src="./images" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index_pagprin.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+            <button class="btn btn-outline-danger" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+  </nav>
+    <div id="wrapper" class="container bg-success">
+        <div class="table-responsive table-striped align-middle">
+          <h2 class="text-purple text-center p-2">Depredadores</h2>
+            <table class="table align-middle">
+                <thead class="thead">
+                    <th scope="col">Fila</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Familia</th>
+                    <th scope="col">Localización</th>
+                    <th scope="col">Tiempo de existencia</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Dieta</th>
+                    <th scope="col">Imágen</th>
+                    <th scope="col">Editar</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-navy" scope="row">1</td>
+                        <td class="text-purple"><i>Anomalocaris</i></td>
+                        <td>Artropodo, Anomalocáridido)</td>
+                        <td>Norteamérica (Canada)</td>
+                        <td>Cambrico</td>
+                        <td>Fue el primer gran carnívoro del planeta.</td>
+                        <td>Peces y trilobites</td>
+                        <td><!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen1">
+                            Imagen
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="imagen1" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="imagenLabel">Anomalocaris</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="./images/anomalocaris_01.jpgab469e6c-9dc8-4c2e-a05f-f429945ba333Zoom.jpg" class="w-100 align-items-center" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><a href="./edición_depredadores.html?clave=1"><!--<i class="bi bi-pencil-fill fs-3 text-primary"></i>-->Editar</td>
+                    </tr>
+                    <tr>
+                        <td class="text-navy" scope="row">2</td>
+                        <td  class="text-purple"><i>Jaekelopterus</i></td>
+                        <td>Artropodo (Euriptérido(Escorpión marino))</td>
+                        <td>Europa (Alemania) y Norteamérica (Estados Unidos)</td>
+                        <td>Devónico Inferior</td>
+                        <td>Era el mayor artropodo que jamás ha existido, con una longitud superior a la altura de una persona.</td>
+                        <td>Artropodos más pequeño e incluso otros <i>Jaekelopterus</i></td>
+                        <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen2">
+                            Imagen
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="imagen2" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="imagenLabel">Jaekelopterus</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="./images/C0153215-Sea_scorpion,_artwork.jpg" class="w-100 text-center" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><a href="./edición_depredadores.html?clave=1">Editar</td>
+                    </tr>
+                    <tr>
+                        <td class="text-navy" scope="row">3</td>
+                        <td class="text-purple"><i>Inostrancevia</i></td>
+                        <td>Terápsido (Gorgonópsido)</td>
+                        <td>Asia (Rusia)</td>
+                        <td>Pérmico Superior</td>
+                        <td>Era el más grande en la familia de los gorgonópsidos, una familia de grandes carnívoros protomamíferos equipadas con afilados dientes de sable.</td>
+                        <td>Reptiles herbívoros como el <i>Scutosaurus</i> y otros protomamíferos como el <i>Vivaxosaurus</i>.</td>
+                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen3">
+                          Imagen
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="imagen3" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="imagenLabel">Inostrancevia</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="./images/AZ_Inostrancevia.jpg" class="w-100 text-center" alt="">
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                              </div>
+                            </div>
+                          </div>
+                        </div></td>
+                        <td><a href="./edición_depredadores.html?clave=1">Editar</td>
+                    </tr>
+                    <tr>
+                        <td class="text-navy" scope="row">4</td>
+                        <td class="text-purple"><i>Postosuchus</i></td>
+                        <td>Archosaurio (Rauisúchido)</td>
+                        <td>Norteamérica (Estado Unidos)</td>
+                        <td>Triasico Superior</td>
+                        <td>Parte de una familia que eran parientes de los dinosaurios, era el mayor carnívoro del Triásico</td>
+                        <td>Otros repitles como el <i>Desmatosuchus</i> y <i>Typothorax</i>; además de protomamíferos como el <i>Placerias</i></td>
+                        <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen4">
+                            Imagen
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="imagen4" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="imagenLabel">Postosuchus</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="./images/Postosuchus_attacks_Desmatosuchus.jpg" class="w-100 text-center" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><a href="./edición_depredadores.html?clave=1">Editar</td>
+                    </tr>
+                    <tr>
+                        <td class="text-navy" scope="row">5</td>
+                        <td class="text-purple"><i>Cryolophosaurus</i></td>
+                        <td>Dinosaurios, Teropodo, Neoteropodo</td>
+                        <td>Antártida</td>
+                        <td>Jurássico Inferior</td>
+                        <td>Uno de los pocos dinosaurios que han sido descubiertos en la Antártida y uno de los primeros grandes dinosaurios carnívoros.</td>
+                        <td>Pterosaurios, dinosaurios pequeños y prosauropódos, como el <i>Glacialisaurus</i></td>
+                        <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen5">
+                            Imagen
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="imagen5" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="imagenLabel">Cryolophosaurus/h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="./images/Cryolophosaurus_ellioti_by_PaleoPastori.jpg" class="w-100 text-center" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><a href="./edición_depredadores.html?clave=1">Editar</td>
+                    </tr>
+                    <tr>
+                        <td class="text-navy" scope="row">6</td>
+                        <td class="text-purple"><i>Pliosaurus</i></td>
+                        <td>Reptil marino, Pliosaurido</td>
+                        <td>Europa y Sudamérica</td>
+                        <td>Jurássico Superior</td>
+                        <td>Uno de los mayores depredadores de los mares jurásicos. La especie más grande, <i>Pliosaurus Funkei</i> tambien recibe el apodo Depredador X.</td>
+                        <td>Peces, tortugas, tiburones primitivos, plesiosaurios e ictiosaurios.</td>
+                        <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen6">
+                            Imagen
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="imagen6" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="imagenLabel">Pliosaurus</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="./images/Dinosaurios_del_mar.jpg" class="w-100 text-center" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><a href="./edición_depredadores.html?clave=1">Editar</td>
+                    </tr>
+                    <tr>
+                        <td class="text-navy" scope="row">7</td>
+                        <td class="text-purple"><i>Torvosaurus</i></td>
+                        <td>Teropódo, Megalosáurido</td>
+                        <td>Norteamérica (Estados Unidos) y Europa(Portugal)</td>
+                        <td>Jurássico Superior</td>
+                        <td>El mayor carnívoro terrestre de Europa y uno de los mayores teropodos de Jurásico.</td>
+                        <td>Sauropodos y estegosáuridos; y ocasionalmente pequeños dinosaurios como el <i>Camptosaurus</i>.</td>
+                        <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen7">
+                            Imagen
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="imagen7" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="imagenLabel">Torvosaurus</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="./images/21-Torvosaurus-attack-Miragaia.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><a href="./edición_depredadores.html?clave=1">Editar</td>
+                    </tr>
+                    <tr>
+                        <td class="text-navy" scope="row">8</td>
+                        <td class="text-purple"><i>Mapusaurus</i></td>
+                        <td>Teropodo, Carcarodontosáuridos</td>
+                        <td>Sudamérica (Argentina)</td>
+                        <td>Cretácico Medio</td>
+                        <td>Uno de los mayores depredaores de Sudamérica, capaz de cazar a los animales más grandes que han pisado el planeta.</td>
+                        <td>Sauropodos, como el <i>Argentinosaurus</i></td>
+                        <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen8">
+                            Imagen
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="imagen8" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="imagenLabel">Mapusarus</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="./images/mapusaurus_by_allotyrannosaurus_ddy123g-fullview.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><a href="./edición_depredadores.html?clave=1">Editar</td>
+                    </tr>
+                    <tr>
+                        <td class="text-navy" scope="row">9</td>
+                        <td class="text-purple"><i>Spinosaurus</i></td>
+                        <td>Teropodo, Espinosáurido</td>
+                        <td>África</td>
+                        <td>Cretácico Medio</td>
+                        <td>El carnívoro más largo que jamás ha existido. A pesar de eso, pasaba la mayor parte de su tiempo cazando pece en el aguas en vez de dinosaurios en la tierra.</td>
+                        <td>Peces, como el pez sierra enorme <i>Onchopristis</i></td>
+                        <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen9">
+                            Imagen
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="imagen9" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="imagenLabel">Spinosaurus</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="./images/aquatic-dinosaur-spinosaurus.jpg" class="w-100 text-center" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><a href="./edición_depredadores.html?clave=1">Editar</td>
+                    </tr>
+                    <tr>
+                        <td class="text-navy" scope="row">10</td>
+                        <td class="text-purple"><i>Tylosaurus</i></td>
+                        <td>Reptil marino, Mosasáurio</td>
+                        <td>Todo el mundo</td>
+                        <td>Cretácico Superior</td>
+                        <td>Un pariente de las serpientes, eran los depredadores más grandes de los océanos, devorando todo lo que podían.</td>
+                        <td>Peces, calamres, tortugas, plesiosaurios, pterosaurios, tiburones, aves marinas, otros mosasaurios e incluso otros de su propia especie.</td>
+                        <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen10">
+                            Imagen
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="imagen10" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="imagenLabel">Tylosaurus</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="./images/Tylosaurus_by_DarrenPepper.jpg" class="w-100 text-center" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><a href="./edición_depredadores.html?clave=1">Editar</td>
+                    </tr>
+                    <tr>
+                        <td class="text-navy" scope="row">11</td>
+                        <td class="text-purple"><i>Tyrannosaurus</i></td>
+                        <td>Teropodo, Tyrannosáurido</td>
+                        <td>Norteamérica (Esta Unidos)</td>
+                        <td>Cretácico Superior</td>
+                        <td>Uno de los carnívoros más grandes que jamás ha exisistido. Tenía un olfato excelente, una vista mejor que una águila y una mándibula y dientes capaces de aplastar huesos.</td>
+                        <td><i>Triceratops</i>, <i>Edmontosaurus</i>, <i>Ankylosaurus</i>, <i>Torosaurus</i>, <i>Ornithomimus</i> y ocasionalmente, jóvenes tiranosaurios.</td>
+                        <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen11">
+                            Imagen
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="imagen11" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="imagenLabel">Tyrannosaurus</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="./images/T-rex_vs_Triceratops_by_Swordlord3d.jpg" class="w-100 text-center" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><a href="./edición_depredadores.html?clave=1">Editar</td>
+                    </tr>
+                    <tr>
+                        <td class="text-navy" scope="row">12</td>
+                        <td class="text-purple"><i>Titanoboa</i></td>
+                        <td>Serpiente</td>
+                        <td>Sudamérica (Colombia)</td>
+                        <td>Paleoceno</td>
+                        <td>La serpiente más grande que jamás ha existido, mataba a sus presas agarrándolas y aplástándolas hasta que se ahogaban.</td>
+                        <td>Tortugas, cocodrilos, peces etc.</td>
+                        <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen12">
+                            Imagen
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="imagen12" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="imagenLabel">Titanoboa</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="./images/Titanoboa_matando.jpg" class="w-100 text-center" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><a href="./edición_depredadores.html?clave=1">Editar</td>
+                    </tr>
+                    <tr>
+                        <td class="text-navy" scope="row">13</td>
+                        <td class="text-purple"><i>Hyaenodon</i></td>
+                        <td>Hienodóntido</td>
+                        <td>Norteamérica (Estados Unidos), Asia (Mongolia)</td>
+                        <td>Eoceno Medio a Mioceno Inferior</td>
+                        <td>Parte de una familia extinta de depredadores, gobernaba Norteamérica y Asia durante más 20 millones de año´, sus únicos rivales siendo los enormes entelodontes</td>
+                        <td>Caballos primitivos, camellos sin jóroba, rinocerontes sin cuerno, mamíferos extintos llamados oreodontes e incluso gatos de dientes sable primitivos llamados <i>Dinictis</i></td>
+                        <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen13">
+                            Imagen
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="imagen13" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="imagenLabel">Hyaenodon</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="./images/Hyaenodon.jpg" class="w-100 text-center" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><a href="./edición_depredadores.html?clave=1">Editar</td>
+                    </tr>
+                    <tr>
+                        <td class="text-navy" scope="row">14</td>
+                        <td class="text-purple"><i>Barinasuchus</i></td>
+                        <td>Cocodrilomorfo, Sebecosúquido</td>
+                        <td>Sudamérica(Argentina, Venezuela y Perú)</td>
+                        <td>Eoceno medio a Mioceno medio</td>
+                        <td>Un cocodrilo terrestre enorme de 6 metros de lomgitud, era el depredador alfa en un mundo dominado por mamíferos; y el carnívoro más grande de la tierra desde el <i>Tyrannosaurus</i></td>
+                        <td>Animales similares a tápires llamados <i>Astatopotherium</i>, armadillos gigantes, maíferos extintos llamados toxodontes.</td>
+                        <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen14">
+                            Imagen
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="imagen14" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="imagenLabel">Barinasuchus</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="./images/Barinasuchus_by_Gungenheim85.png" class="w-100 text-center" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><a href="./edición_depredadores.html?clave=1">Editar</td>
+                    </tr>
+                    <tr>
+                        <td class="text-navy" scope="row">15</td>
+                        <td class="text-purple"><i>Titanis</i></td>
+                        <td>Ave, Fororrácido</td>
+                        <td>Norteamérica (Estados Unidos)</td>
+                        <td>Plioceno Inferior a Pleisotceno Superior</td>
+                        <td>Parte de una familia de aves gigantes no voladoras, tambien llamadas aves de terror. Era el último de la familia, con largas piernas para persegir animales y un pico que usaba como hacha para aplastar huesos</td>
+                        <td>Caballos, camellos, perezoso gigantes terrestres y mamíferos pequeños.</td>
+                        <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen15">
+                            Imagen
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="imagen15" tabindex="-1" aria-labelledby="imagenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="imagenLabel">Titanis</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="./images/Titanis.jpg" class="w-100 text-center" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><a href="./edición_depredadores.html?clave=1">Editar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

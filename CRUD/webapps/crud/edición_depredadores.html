@@ -1,0 +1,98 @@
+<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.DriverManagement"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.ResultSet"%>
+
+<%page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--meta charset="UTF-8"-->
+  <!--meta http-equiv="X-UA-Compatible" content="IE=edge"-->
+  <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Formulario De Modificación de Depredador</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/estilo.css">
+  <link rel="shortcut icon" href="./images/617-6170907_dinosaur-skull-x-ray-t-rex-skull-vector.png" type="image/x-icon">
+</head>
+<body class="bg-success">
+  <!--div id="wrapper" class="container">
+      <div class="row d-flex align-items-center justify-content-center">
+          <!-- usamos d-flex para el div de abajo, y así poder centrar el login en verticalcon align-items-center. OJO: HAY QUE INDICAR EL ALTO DEL BLOQUE PARA QYE PUEDA CALCULAR DÓNDE ESTÁ EL CENTRO -->
+          <!--<div class="col-xs-12 col-md-8 col-lg-6 vh-100 m-auto">
+            <form action="index_depredadores.html" method="post" class="border border-primary p-4 bg-success text-lime opacity-75">
+              <h1 class="text-center py-3 bg-lime">Edición de Depredadores</h1>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp">
+                <div id="nombreHelp" class="form-text">Obligatorio</div>
+              </div>
+              <div class="mb-3">
+                <label for="apellido" class="form-label">Familia</label>
+                <input type="text" class="form-control" id="familia" name="familia" aria-describedby="apellidoHelp">
+                <div id="familiaHelp" class="form-text">Obligatorio</div>
+              </div>
+              <div class="mb-3">
+                <label for="localizacion" class="form-label">Localización</label>
+                <input type="number" class="form-control" id="localizacion" name="localizacion" aria-describedby="localizacionHelp">
+                <div id="localizacionHelp" class="form-text">Obligatorio</div>
+              </div>
+              <div class="mb-3">
+                <label for="tempEx" class="form-label">Tiempo de existencia</label>
+                <input type="number" class="form-control" name="tempEx" id="tempEx" aria-describedby="tempExHelp">
+                <div id="tempExHelp" class="form-text">Obligatorio</div>
+              </div>
+              <div class="mb-3">
+                <label for="comentario" class="form-label">Comentario</label>
+                <textarea class="form-control" placeholder="Deja tu comentario" id="comentario" name="comentario" value="Your mother's ass"></textarea>
+                <div id="comentarioHelp" class="form-text">Obligatorio</div>
+              </div>
+              <div>
+                <label for="dieta"></label>
+                <textarea name="dieta" id="dieta" placeholder="¿Qué comía?"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+      </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>-->
+  <%request.setCharacterEncoding("UTF-8");%>
+  <%
+    Class.forName("com.mysql.jbc.Driver")
+    Statement j = conexion.createStatement();
+    Statement x = conexion.createStatement();
+
+    boolean depredadorRepetido = false;
+
+    ResultSet depredador = x.executeQuery("SELECT * FROM depredadores");
+
+    while (depredador.next()) {
+      if (request.getParameter("NomDep)) {
+        depredadorRepetido = true;
+      }
+    }
+    if (depredadorRepetido) {
+      session.setAtribute("error", "ya existe este depredador")
+      response.sendRedirect("index_depredadores.html");
+    } else {
+      ResultSet listaDepredador = j.executeQuery("SELECT * FROM index_depredadores");
+      listaDepredador.next();
+      String insertarDepredador= "INSERT INTO index_depredadores(NomCamp, FamDep, LocDep, TempDep, Descripcion, Dieta, CodDep) VALUES('" 
+              + request.getParameter("NomDep") + "','"
+              + request.getParameter("FamDep") + "','"
+              + request.getParameter("LocDep") + "','"
+              + request.getParameter("TempDep") + "','"
+              + request.getParameter("Descripcion") + ","
+              + request.getParameter("Dieta") + ","
+              + session.getAttribute("CodDep")+ "')";
+                
+      j.execute(insertarDepredador);
+      out.print(insertarDepredador);
+      response.sendRedirect("index_depredadores.html");
+    }
+  %>
+</body>
+</html>

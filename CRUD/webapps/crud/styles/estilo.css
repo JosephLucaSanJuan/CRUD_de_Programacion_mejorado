@@ -1,0 +1,20 @@
+/********* estilo *********/
+
+@font-face {
+    font-family: note;
+    src: url();
+}
+
+/* general layout */
+
+#wrapper {background-image: url("../images/Tyrannosaurus_vs_Triceratops.jpg");
+          background-size: cover;
+               margin:auto;}
+
+.bg-lime {color:chartreuse;}
+
+.text-lime {color: chartreuse;}
+
+.text-purple {color:purple;}
+
+.text-navy {color: navy;}

@@ -1,0 +1,54 @@
+/* */
+
+@font-face {
+  font-family: note;
+  src: url();
+}
+
+/* general layout */
+
+.bg-secondary {background-image: url("../images/Dinosaurs-in-the-round-cover-b.jpg");
+  background-size: cover;
+       margin:auto;}
+
+.bg-lime {color:chartreuse;}
+
+.text-purple {color:purple;}
+
+.text-navy {color: navy;}
+
+.btn-lime {color: chartreuse;}
+
+/****** estilo de intro *******/
+
+#intro {padding: 2%;
+        border-bottom: 1px solid purple;}
+
+#intro h1 {text-align: center;
+           font-size: 3em;}
+
+#intro p {text-align: center;
+          font-family: 1.5em;}
+
+
+/******* estilo de intro ********/
+
+img {position: center;}
+
+
+/******* estilo de tablas ********/
+
+#tablas {background-color: green;}
+
+.tabla {width: 30%;
+        margin: 10%;
+        float: left;
+        padding: 1%;
+        box-sizing: border-box;
+        border: 1px solid purple;}
+
+.tabla img {width: 100%;
+            /*display: block;*/
+            margin: auto;}
+
+.tabla button {padding: 2%;}

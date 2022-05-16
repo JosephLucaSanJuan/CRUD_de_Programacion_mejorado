@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MORTAL KOMBAT PREHISTÓRICO</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/style_pagprin.css">
+  <link rel="shortcut icon" href="./images/617-6170907_dinosaur-skull-x-ray-t-rex-skull-vector.png" type="image/x-icon">
+</head>
+<body class="bg-secondary">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary text-danger position-sticky top-0 opacity-75 zindex-sticky">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img id="logo" class="logo" src="./images" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index_pagprin.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+          <button class="btn btn-outline-danger" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="wrapper" class="container bg-success">
+    <section id="intro" class="text-navy">
+      <h1><strong>Bienvenidos</strong></h1>
+      <div>
+        <p>Preparaos para ver una batalla entre las criaturas más peligrosas jamás han caminado por la Tierra.</p>
+      </div>
+      <div>
+        <p>Desde los depredadores más feroces, hasta los defensores más duros. Podréis elegir dos combatientes, cada uno de una tabla distinta.</p>
+      </div>
+      <div>
+        <img src="./images/Tyrannosaurus_vs_Triceratops.jpg" alt="" srcset="">
+      </div>
+    </section>
+    <section id="tablas" class="text-center text-danger bg-success">
+      <h1 class="text-navy p-1 text-center">Combatientes</h1>
+      <div class="tabla bg-success">
+        <img src="./images/terror_bird_vs_wolf.jfif" alt="w-100">
+        <br>
+        <br>
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="index_bbdd.html">
+          <a href="index_depredadores.html">Depredadores</a>
+        </button>
+      </div>
+      <div class="tabla bg-success">
+        <img src="./images/Therizinosaurus_The_Stomping_Land_03_by_swordlord3d.jpg" alt="w-100">
+        <br>
+        <br>
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="index_bbdd.html">
+          <a href="index_defensores.html">Defensores</a>
+        </button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
